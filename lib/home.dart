@@ -14,14 +14,15 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
         backgroundColor: Colors.red,
-        mini: true,
+        foregroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
-        ),
+          ),
         onPressed: () {},
-        child: Icon(Icons.add),
+        icon: Icon(Icons.add),
+        label: Text('Add'),
         elevation: 10,
       ),
     );
